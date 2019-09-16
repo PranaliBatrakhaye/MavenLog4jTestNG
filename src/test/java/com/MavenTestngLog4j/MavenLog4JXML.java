@@ -33,6 +33,7 @@ public class MavenLog4JXML
   @Test
   public void loginWithValidDetails() 
   {
+	  System.out.println("Replacement of println");
 	  PropertyConfigurator.configure("E:\\eclipse\\MavenLog4jTestNG\\src\\test\\resources\\log4j.properties");
 	  driver.findElement(By.xpath("//input[@name='userName']")).sendKeys("Pranali@1");
 	  driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Passw@rd1");
